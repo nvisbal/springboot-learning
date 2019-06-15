@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Conociendo SpringBoot MVC</title>
+</head>
+<body>
+  Hola 
+  <p th:text="'Hola, ' + ${name} + ' ' + ${lastname}"/>
+  
+  <table>
+    <th:block th:each="per: ${list}">
+        <tr>
+          <td th:text="${per.id} + '-' + ${per.name}"></td>
+        </tr>
+    </th:block>
+  </table>
+  
+   <p th:text="'Hola, ' + ${person.name}"/>
+</body>
+</html>
