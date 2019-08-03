@@ -25,9 +25,9 @@ public class DemoWebApplicationTests {
 	@Test
 	public void crearUsuarioTest() {
 		Usuario usuario = new Usuario();
-		usuario.setId(4);
-		usuario.setNombre("usuario 4");
-		usuario.setClave(bcpw.encode("123"));
+		// usuario.setId(1);
+		usuario.setNombre("visbalnelson");
+		usuario.setClave(bcpw.encode("112233"));
 		Usuario retorno = repo.save(usuario);
 		
 		assertTrue(retorno.getNombre().equalsIgnoreCase(usuario.getNombre()));
